@@ -1,10 +1,12 @@
 package com.linsage;
 
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -107,6 +109,19 @@ public class KV<K, V> extends LinkedHashMap<K, V> {
     public String toPrettyJson() {
         return new GsonBuilder().setPrettyPrinting().create().toJson(this);
     }
+
+    public String toPrettySnakeJson() {
+
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        gsonBuilder.setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES);
+        Gson gson = gsonBuilder.create();
+
+
+        return gson.toJson(this);
+    }
+
+
+
 
     public boolean equals(Object KV) {
         return KV instanceof KV && super.equals(KV);
