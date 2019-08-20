@@ -1,8 +1,8 @@
 <idea-plugin>
     <id>com.linsage</id>
-    <name>Java Bean to Json</name>
-    <version>1.0.6</version>
-    <vendor email="linsage@live.com" url="https://github.com/linsage"> linsage</vendor>
+    <name>java2json</name>
+    <version>2.0.1</version>
+    <vendor email="linsage@live.com" url="https://github.com/linsage">linsage</vendor>
     <depends>com.intellij.modules.lang</depends>
     <description><![CDATA[
        <p>A simple plugin for converting Java bean to JSON</p>
@@ -16,7 +16,7 @@
          <li>1.0.3 - support time class type.</li>
          <li>1.0.4 - build IntelliJ IDEA 192.* due to Java functionality</li>
          <li>1.0.5 - support enum</li>
-         <li>1.0.6 - support snake json</li>
+         <li>2.0.1 - support yapi json schema support
     ]]>
     </change-notes>
 
@@ -36,11 +36,13 @@
     </extensions>
 
     <actions>
-        <!--<action id="com.linsage.Java2JsonAction" class="com.linsage.Java2JsonAction" text="ConvertToJson"-->
-                <!--description="Java Bean Convert to Json">-->
-            <!--<add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
-        <!--</action>-->
-        <action id="com.linsage.Java2SnakeJsonAction" class="com.linsage.Java2SnakeJsonAction" text="ConvertToSnakeJson"
+        <action id="com.linsage.Java2JsonAction" class="com.linsage.Java2JsonAction"
+                text="ConvertToJson"
+                description="Java Bean Convert to Json">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+        <action id="com.linsage.Java2JsonSchema4SnakeCaseAction" class="com.linsage.Java2JsonSchema4SnakeCaseAction"
+                text="ConvertToJsonSchema4SnakeCase"
                 description="Java Bean Convert to Snake Json">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>

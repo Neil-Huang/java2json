@@ -110,17 +110,6 @@ public class KV<K, V> extends LinkedHashMap<K, V> {
         return new GsonBuilder().setPrettyPrinting().create().toJson(this);
     }
 
-    public String toPrettySnakeJson() {
-
-        GsonBuilder gsonBuilder = new GsonBuilder();
-        gsonBuilder.setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES);
-        Gson gson = gsonBuilder.create();
-
-
-        return gson.toJson(this);
-    }
-
-
 
 
     public boolean equals(Object KV) {

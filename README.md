@@ -24,6 +24,14 @@ https://plugins.jetbrains.com/plugin/10336-java-bean-to-json
 - v1.0.5
     - support enum
 
+- v2.0
+    - Second revision by kevin
+- v2.0.1    
+    - add yapi json schema support
+    
+## Todo List
+- 字段的注解处理
+
 ## Support
 
 ![](https://note-1256162930.picgz.myqcloud.com/zo1mm.jpg)
