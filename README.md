@@ -32,6 +32,9 @@ https://plugins.jetbrains.com/plugin/10336-java-bean-to-json
 ## Todo List
 - 字段的注解处理
 
+## 参考
+https://github.com/FurionCS/PojoToJson
+
 ## Support
 
 ![](https://note-1256162930.picgz.myqcloud.com/zo1mm.jpg)
