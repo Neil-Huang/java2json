@@ -32,9 +32,17 @@ https://plugins.jetbrains.com/plugin/10336-java-bean-to-json
 ## Todo List
 - 字段的注解处理
 
-## 参考
+## Reference
 https://github.com/FurionCS/PojoToJson
 
 ## Support
-
 ![](https://note-1256162930.picgz.myqcloud.com/zo1mm.jpg)
+
+## How to build
+
+- 配置
+1) 在IDEA 添加 plugin SDK 
+2）重启IDEA
+
+- 打包
+选择 Build | Prepare Plugin Module ‘module name’ for Deployment 来打包插件：
