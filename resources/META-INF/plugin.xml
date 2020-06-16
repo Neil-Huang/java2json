@@ -1,22 +1,24 @@
 <idea-plugin>
     <id>com.linsage</id>
     <name>java2json</name>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
     <vendor email="linsage@live.com" url="https://github.com/linsage">linsage</vendor>
     <depends>com.intellij.modules.lang</depends>
     <description><![CDATA[
        <p>A simple plugin for converting Java bean to JSON</p>
        <p>When you post json request using Postman :)</p>
-    ]]></description>
+     ]]>
+    </description>
 
     <change-notes><![CDATA[
-         <li>1.0 - First revision.</li>
-         <li>1.0.1 - update plugin info.</li>
-         <li>1.0.2 - add doc comment.</li>
-         <li>1.0.3 - support time class type.</li>
-         <li>1.0.4 - build IntelliJ IDEA 192.* due to Java functionality</li>
-         <li>1.0.5 - support enum</li>
-         <li>2.0.1 - support yapi json schema support
+        <li>2.0.2 - support Unicode 转 中文
+        <li>2.0.1 - support yapi json schema support
+        <li>1.0.5 - support enum</li>
+        <li>1.0.4 - build IntelliJ IDEA 192.* due to Java functionality</li>
+        <li>1.0.3 - support time class type.</li>
+        <li>1.0.2 - add doc comment.</li>
+        <li>1.0.1 - update plugin info.</li>
+        <li>1.0 - First revision.</li>
     ]]>
     </change-notes>
 
@@ -36,6 +38,11 @@
     </extensions>
 
     <actions>
+        <action id="com.wawa.Unicode2Chinese" class="com.wawa.Unicode2Chinese"
+                text="Unicode2Chinese"
+                description="Unicode 转 中文">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
         <action id="com.linsage.Java2JsonAction" class="com.linsage.Java2JsonAction"
                 text="ConvertToJson"
                 description="Java Bean Convert to Json">
@@ -46,6 +53,10 @@
                 description="Java Bean Convert to Snake Json">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
+
+        <!--        <action id="AppendAction" class="com.wawa.AppendAction" text="AppendAction" description="AppendAction">-->
+        <!--            <add-to-group group-id="EditorPopupMenu" anchor="first"/>-->
+        <!--        </action>-->
     </actions>
 
 </idea-plugin>

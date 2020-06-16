@@ -46,3 +46,4 @@ https://github.com/FurionCS/PojoToJson
 
 - 打包
 选择 Build | Prepare Plugin Module ‘module name’ for Deployment 来打包插件：
+jar包会保存到：/Users/kevin/Documents/code/github/java2json/.idea/java2json.jar
