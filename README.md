@@ -28,6 +28,8 @@ https://plugins.jetbrains.com/plugin/10336-java-bean-to-json
     - Second revision by kevin
 - v2.0.1    
     - add yapi json schema support
+- v2.0.2
+    - support Unicode 转 中文
     
 ## Todo List
 - 字段的注解处理
